@@ -1,0 +1,18 @@
+
+<h1 class="text-center my-5">Liverpool players:</h1>
+
+<button routerLink="/new" class="btn btn-danger p-3 mb-4 ">Add player</button>
+
+<div class="row">
+
+
+    <div class="card my-5" style="width: 18rem;" *ngFor="let player of players">
+        <img src="https://cdn.1min30.com/wp-content/uploads/2018/02/Embl%C3%A8me-Liverpool.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{player.firstName}}  {{player.lastName}}</h5>
+            <p class="card-text">{{player.poste}}</p>
+            <a (click)="deletePlayer(player.id)" class="btn btn-danger">Delete</a>
+        </div>
+    </div>
+
+</div>

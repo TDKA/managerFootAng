@@ -1,0 +1,25 @@
+<a routerLink="/" class="btn btn-primary">Go back</a>
+
+<h2 class="text-center my-5">Add player:</h2>
+<form style="width: 50%;" class="mx-auto" >
+  <div class="mb-3">
+    
+    <input type="text" class="form-control" placeholder="First Name" #firstName>
+  </div>
+
+  <div class="mb-3">
+    
+    <input type="text" class="form-control" placeholder="Last Name"  #lastName>
+  </div>
+
+  <div class="mb-3">
+    
+    <input type="text" class="form-control" placeholder="Postition" #poste>
+  </div>
+ 
+
+ 
+  <button class="btn btn-primary" (click)="createShort(firstName.value, lastName.value, poste.value)">Create</button>
+
+
+</form>
